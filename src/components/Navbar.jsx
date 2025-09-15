@@ -22,11 +22,16 @@ const Navbar = () => {
   const navItems = ['Home', 'About', 'Services', 'Sponsors', 'Contact'];
 
   return (
-    <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-gray-900 bg-opacity-90 shadow-lg' : 'bg-gradient-to-br from-indigo-900 via-purple-800 to-pink-700 bg-opacity-80'
-      } backdrop-blur-md`}
-    >
+<nav
+  className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+    scrolled
+      ? 'bg-gray-900 bg-opacity-90 shadow-lg'
+      : 'bg-gradient-to-r from-gray-800 via-gray-900 to-black bg-opacity-80'
+  } backdrop-blur-md`}
+>
+
+
+
       <div className="container mx-auto px-4 py-4 flex items-center justify-between relative">
         {/* Logo + Brand */}
         <div className="flex items-center">
@@ -106,12 +111,18 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Animated Background Blobs */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute w-80 h-80 bg-pink-500 bg-opacity-20 rounded-full -top-40 -left-40 animate-blob"></div>
-        <div className="absolute w-80 h-80 bg-indigo-500 bg-opacity-20 rounded-full bottom-0 right-0 animate-blob animation-delay-2000"></div>
-        <div className="absolute w-64 h-64 bg-purple-500 bg-opacity-20 rounded-full top-1/2 left-1/4 animate-blob animation-delay-4000"></div>
-      </div>
+{/* Animated Background Blobs */}
+<div className="absolute inset-0 overflow-hidden pointer-events-none">
+  {/* Top-left blob (white) */}
+  <div className="absolute w-80 h-80 bg-white bg-opacity-20 rounded-full -top-40 -left-40 animate-blob"></div>
+
+  {/* Bottom-right blob (light gray) */}
+  <div className="absolute w-80 h-80 bg-gray-400 bg-opacity-20 rounded-full bottom-0 right-0 animate-blob animation-delay-2000"></div>
+
+  {/* Middle blob (blue-gray) */}
+  <div className="absolute w-64 h-64 bg-blue-500 bg-opacity-20 rounded-full top-1/2 left-1/4 animate-blob animation-delay-4000"></div>
+</div>
+
 
       <style jsx>{`
         .backdrop-blur-md {

@@ -43,7 +43,7 @@ export default function Hero() {
       sx={{
         position: "relative",
         color: "white",
-        py: 10,
+        py: 30,
         textAlign: "center",
         overflow: "hidden",
         minHeight: "500px",
@@ -132,7 +132,7 @@ export default function Hero() {
       
       {/* Content */}
       <Container>
-        <Typography variant="h3" gutterBottom sx={{ fontWeight: "bold", textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}>
+        <Typography variant="h3" gutterBottom sx={{ fontWeight: "bold", textShadow: "2px 2px 4px rgba(9, 9, 9, 0.5)" }}>
           Affordable Physiotherapy Care for Everyone in India
         </Typography>
         <Typography variant="h6" gutterBottom sx={{ mb: 4, opacity: 0.9, textShadow: "1px 1px 2px rgba(0,0,0,0.5)" }}>
