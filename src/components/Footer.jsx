@@ -9,7 +9,7 @@ export default function Footer() {
           © {new Date().getFullYear()} Algonix. All Rights Reserved.
         </Typography>
         <Typography variant="body2">
-          Contact: info@algonix.com | +91 8471984433
+          Contact: algonixindia@gmail.com | +91 8471984433
         </Typography>
       </Container>
     </Box>
