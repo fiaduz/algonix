@@ -14,7 +14,7 @@ import SendIcon from '@mui/icons-material/Send';
 import './ChatBot.css';
 
 const ChatBot = () => {
-  const API_KEY = 'AIzaSyBm2V608qNDwMqnzgWjmrxvfkWc6bIgTm0'; // Replace with your Gemini API key
+  const API_KEY = import.meta.env.VITE_GEMINI_API_KEY; // Replace with your Gemini API key
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
   const [messages, setMessages] = useState([
