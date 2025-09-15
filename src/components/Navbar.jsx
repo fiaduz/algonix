@@ -47,7 +47,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <Link
               key={item}
-              to="/coming-soon"
+              to="/chat-bot"
               className={`text-lg font-medium ${
                 scrolled ? 'text-white' : 'text-white'
               } hover:text-pink-300 transition-colors`}
